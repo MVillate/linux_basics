@@ -13,3 +13,5 @@ ls -l /var/fakedir 2>> err.txt
 # Throwing the error away
 ls -l /var/fakedir 2>> /dev/null
 ```
+
+```bash &>``` redirects both stdout and stderr.

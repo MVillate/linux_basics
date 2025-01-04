@@ -28,3 +28,33 @@ $ cat meal.txt
 fruit
 chocolate
 ```
+
+## Tee redirect > and append >>
+The tee command in Linux is used to read from standard input (stdin) and write to both standard output (stdout) and one or more files simultaneously
+
+```bash
+# Creates file and shows output
+$ echo "file" | tee trash.txt
+file
+$ echo "file2" | tee -a trash.txt
+file2
+```
+
+```bash
+$ cat datasets/fruits.txt | sort -r | tee /dev/stderr | grep "apple"
+watermelon
+strawberry
+banana
+apple
+apple
+# Result of grep
+apple
+apple
+```
+
+```bash
+# Redirect stdout to file
+$ echo "file2" >  trash.txt
+# Redirect stdout to append it to a file 
+$ echo "file2" >>  trash.txt
+```
