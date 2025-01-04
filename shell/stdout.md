@@ -1,5 +1,10 @@
 # Filtering output
 
+```bash 
+# Example capturing output of ls command to output.txt file
+ls -l /home > output.txt
+```
+
 ```bash
 $ echo -e "Apple\nBanana\nAnon\nCharlie\nApple" | sort -r
 Charlie
