@@ -58,3 +58,15 @@ $ echo "file2" >  trash.txt
 # Redirect stdout to append it to a file 
 $ echo "file2" >>  trash.txt
 ```
+
+## Useless use of cat (UUOC)
+
+```bash
+cat /etc/passwd | sort -r  # Useless use of cat (UUOC)
+```
+
+Is better to feed directly the file to sort 
+
+```bash 
+sort -r < /etc/passwd
+```
