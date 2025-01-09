@@ -42,8 +42,8 @@ file2
 
 The command | tee /dev/stderr is used to duplicate command output, sending it to both:
 
-stdout (standard output, default)
-stderr (standard error, via /dev/stderr)
+- stdout (standard output, default)
+- stderr (standard error, via /dev/stderr)
 ```bash
 $ cat datasets/fruits.txt | sort -r | tee /dev/stderr | grep "apple"
 watermelon
